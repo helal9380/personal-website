@@ -16,52 +16,53 @@ import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 const skillsData = [
   {
     name: "React.js",
+    image: "https://i.ibb.co.com/7NxNVXm9/images.jpg",
     icon: <FaReact className="text-blue-500 w-8 h-8" />,
-    level: 80,
+    level: 90,
     description: "A JavaScript library for building user interfaces",
   },
   {
     name: "HTML5",
     icon: <FaHtml5 className="text-[#F97316] w-8 h-8" />,
     color: "#F97316",
-    level: 90,
+    level: 95,
     description: "The standard markup language for creating web pages",
   },
   {
     name: "CSS3",
     icon: <FaCss3Alt className="text-blue-700 w-8 h-8" />,
-    level: 85,
+    level: 97,
     description:
       "A style sheet language used for describing the presentation of a document",
   },
   {
     name: "JavaScript",
     icon: <FaJsSquare className="text-yellow-500 w-8 h-8" />,
-    level: 80,
+    level: 90,
     description: "A high-level, versatile programming language",
   },
   {
     name: "Tailwind CSS",
     icon: <SiTailwindcss className="text-teal-400 w-8 h-8" />,
-    level: 75,
+    level: 100,
     description: "A utility-first CSS framework for rapid UI development",
   },
   {
     name: "Git",
     icon: <FaGitAlt className="text-red-500 w-8 h-8" />,
-    level: 70,
+    level: 85,
     description: "A distributed version control system",
   },
   {
     name: "Node.js",
     icon: <FaNodeJs className="text-green-500 w-8 h-8" />,
-    level: 65,
+    level: 75,
     description: "A JavaScript runtime built on Chrome's V8 JavaScript engine",
   },
   {
     name: "Next JS",
     icon: <SiNextdotjs className="text-green-500 w-8 h-8" />,
-    level: 65,
+    level: 80,
     description: "A JavaScript runtime built on Chrome's V8 JavaScript engine",
   },
 
@@ -81,7 +82,7 @@ const Skills = () => {
           {skillsData.map((skill, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg"
+              className={`flex flex-col items-center p-6 bg-[url('${skill?.image}')] bg-cover bg-center dark:bg-gray-700 rounded-lg shadow-lg`}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}

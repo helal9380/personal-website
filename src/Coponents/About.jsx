@@ -21,7 +21,7 @@ const About = () => {
             <img
               src={img}
               alt="Asad's Profile"
-              className="rounded-full w-64 h-64 object-cover shadow-lg"
+              className="rounded-full w-96 h-96 object-cover shadow-lg"
             />
           </motion.div>
 
@@ -52,7 +52,7 @@ const About = () => {
             {/* Download Resume Button */}
             <div className="mt-6">
               <a
-                href="/resume.pdf" // Place resume.pdf in the public folder
+                href="https://drive.google.com/file/d/1rx30VjNRMqWMLR-AOhWviwiuSez29ial/view?usp=sharing" // Place resume.pdf in the public folder
                 download
                 className="inline-block bg-gray-800 text-white px-6 py-3 rounded-md shadow hover:bg-gray-700 transition duration-300">
                 Download Resume

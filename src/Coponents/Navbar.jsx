@@ -64,7 +64,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <a
               href="#contact"
-              className="hidden lg:inline-block px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 transition duration-300">
+              className="hidden lg:inline-block px-4 py-2 text-white bg-gray-700 rounded-md hover:bg-gray-800 transition duration-300">
               Get in Touch
             </a>
             {/* <DarkModeToggle /> Add the toggle button */}
